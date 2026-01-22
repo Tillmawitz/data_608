@@ -1,0 +1,94 @@
+---
+title: "Visualization 2"
+author: "Matthew Tillmawitz"
+date: "2025-02-23"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(fredr)
+library(tidyverse)
+library(magrittr)
+```
+
+# Reading Fed Data
+
+```{r read data}
+fredr_set_key("909a89562b9c62803a32ee1b70a8e59b")
+stock <- fredr(
+  series_id = "DJIA",
+  observation_start = as.Date("2000-01-01"),
+  observation_end = as.Date("2025-01-01"),
+  frequency = "m"
+)
+
+bond <- fredr(
+  series_id = "DGS10",
+  observation_start = as.Date("2000-01-01"),
+  observation_end = as.Date("2025-01-01"),
+  frequency = "m"
+)
+
+unemployment <- fredr(
+  series_id = "UNRATE",
+  observation_start = as.Date("2000-01-01"),
+  observation_end = as.Date("2025-01-01"),
+  frequency = "m"
+)
+
+stock %<>% rename(dow = value)
+bond %<>% rename(bond = value)
+unemployment %<>% rename(unemployment = value)
+```
+
+# Arranging Data
+
+```{r, results='hide'}
+combined_df <- bond |>
+  left_join(stock, by = join_by(date)) |>
+  left_join(unemployment, by = join_by(date)) |>
+  select(date, bond, dow, unemployment)
+
+truncated_df <- combined_df |>
+  filter(date > "2015-03-01")
+
+
+normalized_df <- truncated_df |>
+  mutate(across(-date, ~ scale(.x, center = FALSE)))
+normalized_df
+```
+
+# Visualization
+
+```{r }
+plot(normalized_df$date, normalized_df$bond, 
+     type = 'l', 
+     col = '#1b9e77', 
+     ylim=c(0,3),
+     ylab = "",
+     yaxt = "n",
+     xlim = c(as.Date("2013-01-01"), as.Date("2025-01-01")),
+     xlab = "",
+     cex.sub = 0.75,
+     col.sub = "grey",
+     sub = "Unemployment Rate moves opposite the other two indicators, with Treasury\nYield exhibiting higher variance than Market Prices but a similar trend",
+     frame.plot = FALSE)
+lines(normalized_df$date, normalized_df$dow, col = '#d95f02')
+lines(normalized_df$date, normalized_df$unemployment, col = '#7570b3')
+legend(as.Date("2021-12-01"), 3, 
+       legend = c("10-Year Treasury Yield", "Dow Jones Price", "Unemployment Rate"),
+       fill = c("#1b9e77","#d95f02", "#7570b3"),
+       border = c("#1b9e77","#d95f02", "#7570b3"),
+       bty = "n", 
+       cex = 0.7)
+title(main = "Correlated Economic Indicators",
+     adj = 0.4)
+```
+
+After scaling the data we can easily see how the 10-Year Treasury Yield, Dow Jones Market Price, and Unemployment rate are correlated with each other. The relationship is most obvious just after 2020 due to the abrupt and drastic effects the Covid pandemic had on the economy. Broadly speaking, the 10-Year Treasury Yield and Dow Jones Market Price move together, while the Unemployment Rate is inversely correlated with the other two indicators. This makes intuitive sense, and one can easily conclude that when companies are doing well and their stock price is growing they would hire more workers and borrow more to invest in growth.
+
+
+
+
+

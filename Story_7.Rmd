@@ -1,0 +1,214 @@
+---
+title: "Story 7"
+author: "Matthew Tillmawitz"
+date: "2025-05-17"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)  # Includes dplyr, tidyr, readr, etc.
+library(leaflet)
+library(maps)
+library(RColorBrewer)
+library(htmltools)
+library(sf)
+library(stringr)
+```
+
+## R Markdown
+
+Codes to use:
+- NUETP Nuclear electricity total net generation
+- HYTCP Hydroelectricity total net generation
+- WYTCP Wind
+- SOTGP Solar thermal and photovoltaic electricity total net generation
+- GEEGP Geothermal electricity net generation in the electric power sector
+- CL
+
+```{r cars}
+raw_data <- read_csv("Net_generation_for_all_sectors.csv", skip = 4)
+```
+
+```{r}
+head(raw_data)
+col_names <- as.character(unlist(raw_data[0, ]))
+col_names
+year_col_idx <- which(col_names == "2024")
+year_col_idx
+```
+
+```{r}
+read_eia_generation_data <- function(file_path) {
+  # Read the raw file content
+  raw_content <- readLines(file_path)
+  
+  # Identify data structure: find the header line with "description"
+  header_line_idx <- which(grepl("description", raw_content, ignore.case = TRUE))[1]
+  
+  # Extract header
+  headers <- strsplit(raw_content[header_line_idx], ",")[[1]]
+  headers <- str_trim(str_replace_all(headers, '"', ''))
+  
+  # Find the year column (we're interested in 2023 data)
+  year_col <- which(headers == "2024")
+  if (length(year_col) == 0) {
+    stop("Could not find 2023 data column in the file")
+  }
+  
+  # Process the data rows
+  data_lines <- raw_content[(header_line_idx+1):length(raw_content)]
+  
+  # Create a tibble to store the structured data
+  result_data <- tibble(
+    description = character(),
+    state = character(),
+    energy_source = character(),
+    generation = numeric()
+  )
+  
+  current_state <- NA_character_
+  
+  # Process each line
+  for (line in data_lines) {
+    # Skip empty lines
+    if (line == "" || is.na(line)) next
+    
+    # Split the line into fields
+    fields <- str_split(line, ",")[[1]]
+    fields <- str_trim(str_replace_all(fields, '"', ''))
+    
+    # Get the description field
+    description <- fields[1]
+    
+    # Skip United States aggregates
+    if (str_detect(description, "^United States")) next
+    
+    # Check if this is a state/region line (no colon in the description)
+    if (!str_detect(description, ":")) {
+      current_state <- description
+      next
+    }
+    
+    # If this is an energy source line for a state
+    if (str_detect(description, ":") && !is.na(current_state)) {
+      # Extract state and energy source from description
+      parts <- str_split(description, " : ")[[1]]
+      
+      if (length(parts) == 2) {
+        state_name <- current_state
+        energy_source <- parts[2]
+        
+        # Get generation value (convert to numeric)
+        generation_value <- suppressWarnings(as.numeric(fields[year_col]))
+        
+        # Add to result data
+        result_data <- result_data %>%
+          add_row(
+            description = description,
+            state = state_name,
+            energy_source = energy_source,
+            generation = generation_value
+          )
+      }
+    }
+  }
+  
+  return(result_data)
+}
+
+# Step 1: Read and process the data file
+raw_data <- read_eia_generation_data("Net_generation_for_all_sectors.csv")
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r}
+clean_data <- raw_data %>%
+  # Filter out regional divisions and keep only actual states
+  filter(state %in% c(state.name, "District of Columbia")) %>%
+  # Clean energy source names for consistent use
+  mutate(
+    energy_source = str_replace_all(energy_source, " ", "_"),
+    energy_source = str_to_lower(energy_source)
+  ) %>%
+  filter(! energy_source %in% c("small-scale_solar_photovoltaic",
+                                "all_utility-scale_solar")) |>
+  # Select only the columns we need
+  select(state, energy_source, generation)
+```
+
+```{r}
+cat("Cleaned data summary:\n")
+cat("Number of states:", n_distinct(clean_data$state), "\n")
+cat("Energy sources:", paste(unique(clean_data$energy_source), collapse=", "), "\n\n")
+```
+```{r}
+map_data <- clean_data %>%
+  pivot_wider(
+    names_from = energy_source,
+    values_from = generation,
+    names_prefix = "energy_"
+  ) %>%
+  # Replace NA values with 0 for mapping
+  mutate(energy_petroleum = energy_petroleum_liquids + energy_petroleum_coke,
+         energy_other = energy_other_renewables + energy_biomass + energy_other_biomass + energy_other + `energy_wood_and_wood-derived_fuels` + energy_other_gases, .keep = "unused") |>
+  select(-c(`energy_all_fuels_(utility-scale)`, `energy_hydro-electric_pumped_storage`)) |>
+  mutate(across(starts_with("energy_"), ~replace_na(., 0))) |>
+  # Calculate total energy (sum of all sources)
+  rowwise() %>%
+  mutate(
+    total_energy = sum(c_across(starts_with("energy_")), na.rm = TRUE)
+  ) %>%
+  ungroup()
+
+```
+
+```{r}
+colnames(map_data)
+```
+
+```{r}
+states_sf <- st_as_sf(maps::map("state", plot = FALSE, fill = TRUE))
+states_sf$ID <- tolower(states_sf$ID)
+
+state_mapping <- tibble(
+  state = c(state.name, "District of Columbia"),
+  ID = tolower(c(state.name, "district of columbia"))
+)
+```
+
+```{r}
+map_data <- map_data %>%
+  left_join(state_mapping, by = "state")
+```
+
+```{r}
+states_data <- states_sf %>%
+  left_join(map_data, by = "ID")
+
+write_csv(clean_data, "processed_energy_data.csv")
+saveRDS(states_data, "states_energy_data.rds")
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

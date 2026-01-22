@@ -1,0 +1,501 @@
+week,team,rank
+1,Kansas,1
+1,Alabama,2
+1,UConn,3
+1,Houston,4
+1,Iowa State,5
+1,Gonzaga,6
+1,Duke,7
+1,Baylor,8
+1,North Carolina,9
+1,Arizona,10
+1,Auburn,11
+1,Tennessee,12
+1,Texas A&M,13
+1,Purdue,14
+1,Creighton,15
+1,Arkansas,16
+1,Indiana,17
+1,Marquette,18
+1,Texas,19
+1,Cincinnati,20
+1,Florida,21
+1,UCLA,22
+1,Kentucky,23
+1,Ole Miss,24
+1,Rutgers,25
+2,Kansas,1
+2,Alabama,2
+2,UConn,3
+2,Gonzaga,4
+2,Auburn,5
+2,Duke,6
+2,Iowa State,7
+2,Houston,8
+2,Arizona,9
+2,North Carolina,10
+2,Tennessee,11
+2,Baylor,12
+2,Purdue,13
+2,Creighton,14
+2,Marquette,15
+2,Indiana,16
+2,Cincinnati,17
+2,Arkansas,18
+2,Kentucky,19
+2,Florida,20
+2,Ohio State,21
+2,St. John's,22
+2,Texas A&M,23
+2,Rutgers,24
+2,Ole Miss,25
+3,Kansas,1
+3,UConn,2
+3,Gonzaga,3
+3,Auburn,4
+3,Iowa State,5
+3,Purdue,6
+3,Houston,7
+3,Alabama,8
+3,Kentucky,9
+3,North Carolina,10
+3,Tennessee,11
+3,Duke,12
+3,Baylor,13
+3,Creighton,14
+3,Marquette,15
+3,Indiana,16
+3,Arizona,17
+3,Cincinnati,18
+3,Wisconsin,19
+3,Arkansas,20
+3,Florida,21
+3,St. John's,22
+3,Texas A&M,23
+3,Rutgers,24
+3,Illinois,25
+4,Kansas,1
+4,Uconn,2
+4,Gonzaga,3
+4,Auburn,4
+4,Iowa State,5
+4,Houston,6
+4,Tennessee,7
+4,Kentucky,8
+4,Alabama,9
+4,Marquette,10
+4,Duke,11
+4,North Carolina,12
+4,Purdue,13
+4,Indiana,14
+4,Wisconsin,15
+4,Cincinnati,16
+4,Baylor,17
+4,Florida,18
+4,Arkansas,19
+4,Texas A&M,20
+4,Creighton,21
+4,Xavier,22
+4,Ole Miss,23
+4,Arizona,24
+4,Mississippi State,25
+5,Kansas,1
+5,Auburn,2
+5,Tennessee,3
+5,Kentucky,4
+5,Marquette,5
+5,Iowa State,6
+5,Gonzaga,7
+5,Purdue,8
+5,Duke,9
+5,Alabama,10
+5,Wisconsin,11
+5,Oregon,12
+5,Florida,13
+5,Cincinnati,14
+5,Baylor,15
+5,Memphis,16
+5,Houston,17
+5,Pittsburgh,18
+5,Illinois,19
+5,North Carolina,20
+5,Oklahoma,21
+5,Texas A&M,22
+5,Ole Miss,23
+5,San Diego State,24
+5,Uconn,25
+6,Tennessee,1
+6,Auburn,2
+6,Iowa State,3
+6,Duke,4
+6,Kentucky,5
+6,Marquette,6
+6,Alabama,7
+6,Gonzaga,8
+6,Florida,9
+6,Kansas,10
+6,Purdue,11
+6,Oregon,12
+6,Oklahoma,13
+6,Michigan,14
+6,Houston,15
+6,Clemson,16
+6,Texas A&M,17
+6,Uconn,18
+6,Ole Miss,19
+6,Wisconsin,20
+6,Michigan State,21
+6,Cincinnati,22
+6,San Diego State,23
+6,UCLA,24
+6,Mississippi State,25
+7,Tennessee,1
+7,Auburn,2
+7,Iowa State,3
+7,Kentucky,4
+7,Duke,5
+7,Alabama,6
+7,Florida,7
+7,Kansas,8
+7,Marquette,9
+7,Oregon,10
+7,Uconn,11
+7,Texas A&M,12
+7,Gonzaga,13
+7,Oklahoma,14
+7,Houston,15
+7,Purdue,16
+7,Ole Miss,17
+7,UCLA,18
+7,Cincinnati,19
+7,Michigan State,20
+7,Memphis,21
+7,Dayton,22
+7,San Diego State,23
+7,Michigan,24
+7,Clemson,25
+8,Tennessee,1
+8,Auburn,2
+8,Iowa State,3
+8,Duke,4
+8,Alabama,5
+8,Florida,6
+8,Kansas,7
+8,Marquette,8
+8,Oregon,9
+8,Kentucky,10
+8,Uconn,11
+8,Oklahoma,12
+8,Texas A&M,13
+8,Gonzaga,14
+8,Houston,15
+8,Ole Miss,16
+8,Cincinnati,17
+8,Michigan State,18
+8,Mississippi State,19
+8,San Diego State,20
+8,Purdue,21
+8,UCLA,22
+8,Arkansas,23
+8,Illinois,24
+8,Baylor,25
+9,Tennessee,1
+9,Auburn,2
+9,Iowa State,3
+9,Duke,4
+9,Alabama,5
+9,Florida,6
+9,Kansas,7
+9,Marquette,8
+9,Oregon,9
+9,Kentucky,10
+9,Uconn,11
+9,Oklahoma,12
+9,Texas A&M,13
+9,Houston,14
+9,UCLA,15
+9,Cincinnati,16
+9,Mississippi State,17
+9,Michigan State,18
+9,gonzaga,19
+9,Purdue,20
+9,Memphis,21
+9,Illinois,22
+9,Arkansas,23
+9,Ole Miss,24
+9,Baylor,25
+10,Tennessee,1
+10,Auburn,2
+10,Iowa State,3
+10,Duke,4
+10,Alabama,5
+10,Kentucky,6
+10,Marquette,7
+10,Florida,8
+10,Uconn,9
+10,Texas A&M,10
+10,Kansas,11
+10,Houston,12
+10,Illinois,13
+10,Mississippi State,14
+10,Oregon,15
+10,Michigan State,16
+10,Oklahoma,17
+10,gonzaga,18
+10,Memphis,19
+10,Purdue,20
+10,West Virginia,21
+10,UCLA,22
+10,Ole Miss,23
+10,Michigan,24
+10,Utah State,25
+11,Auburn,1
+11,Iowa State,2
+11,Duke,3
+11,Alabama,4
+11,Florida,5
+11,Tennessee,6
+11,Marquette,7
+11,Kentucky,8
+11,Kansas,9
+11,Houston,10
+11,Texas A&M,11
+11,Michigan State,12
+11,Oregon,13
+11,Uconn,14
+11,Mississippi State,15
+11,Gonzaga,16
+11,Purdue,17
+11,Memphis,18
+11,Illinois,19
+11,Michigan,20
+11,Ole Miss,21
+11,Utah State,22
+11,Georgia,23
+11,Wisconsin,24
+11,Baylor,25
+12,Auburn,1
+12,Duke,2
+12,Iowa State,3
+12,Alabama,4
+12,Florida,5
+12,Tennessee,6
+12,Houston,7
+12,Michigan State,8
+12,Kentucky,9
+12,Marquette,10
+12,Purdue,11
+12,Kansas,12
+12,Texas A&M,13
+12,Mississippi State,14
+12,Oregon,15
+12,Ole Miss,16
+12,Illinois,17
+12,Wisconsin,18
+12,Uconn,19
+12,St. John's,20
+12,Michigan,21
+12,Missouri,22
+12,West Virginia,23
+12,Memphis,24
+12,Louisville,25
+13,Auburn,1
+13,Duke,2
+13,Iowa State,3
+13,Alabama,4
+13,Florida,5
+13,Houston,6
+13,Michigan State,7
+13,Tennessee,8
+13,Marquette,9
+13,Purdue,10
+13,Kansas,11
+13,Kentucky,12
+13,Texas A&M,13
+13,Mississippi State,14
+13,St. John's,15
+13,Oregon,16
+13,Wisconsin,17
+13,Illinois,18
+13,Memphis,19
+13,Missouri,20
+13,Louisville,21
+13,Texas Tech,22
+13,Ole Miss,23
+13,Vanderbilt,24
+13,Uconn,25
+14,Auburn,1
+14,Duke,2
+14,Alabama,3
+14,Tennessee,4
+14,Houston,5
+14,Florida,6
+14,Purdue,7
+14,Iowa State,8
+14,Michigan State,9
+14,Texas A&M,10
+14,Marquette,11
+14,St. John's,12
+14,Texas Tech,13
+14,Kentucky,14
+14,Missouri,15
+14,Kansas,16
+14,Memphis,17
+14,Maryland,18
+14,Uconn,19
+14,Arizona,20
+14,Wisconsin,21
+14,Mississippi State,22
+14,Illinois,23
+14,Michigan,24
+14,Ole Miss,25
+15,Auburn,1
+15,Alabama,2
+15,Florida,3
+15,Duke,4
+15,Tennessee,5
+15,Houston,6
+15,Purdue,7
+15,Texas A&M,8
+15,St. John's,9
+15,Iowa State,10
+15,Michigan State,11
+15,Texas Tech,12
+15,Arizona,13
+15,Memphis,14
+15,Kentucky,15
+15,Wisconsin,16
+15,Kansas,17
+15,Marquette,18
+15,Ole Miss,19
+15,Michigan,20
+15,Missouri,21
+15,Mississippi State,22
+15,Clemson,23
+15,Creighton,24
+15,Maryland,25
+16,Auburn,1
+16,Florida,2
+16,Duke,3
+16,Alabama,4
+16,Houston,5
+16,Tennessee,6
+16,Texas A&M,7
+16,Iowa State,8
+16,Texas Tech,9
+16,St. John's,10
+16,Wisconsin,11
+16,Michigan,12
+16,Purdue,13
+16,Michigan State,14
+16,Missouri,15
+16,Marquette,16
+16,Kentucky,17
+16,Clemson,18
+16,Arizona,19
+16,Maryland,20
+16,Mississippi State,21
+16,Memphis,22
+16,Kansas,23
+16,Ole Miss,24
+16,Louisville,25
+17,Auburn,1
+17,Duke,2
+17,Florida,3
+17,Houston,4
+17,Tennessee,5
+17,Alabama,6
+17,St. John's,7
+17,Michigan State,8
+17,Iowa State,9
+17,Texas Tech,10
+17,Wisconsin,11
+17,Texas A&M,12
+17,Clemson,13
+17,Missouri,14
+17,Michigan,15
+17,Maryland,16
+17,Kentucky,17
+17,Memphis,18
+17,Louisville,19
+17,Purdue,20
+17,Marquette,21
+17,Arizona,22
+17,Saint Mary's,23
+17,Mississippi State,24
+17,BYU,25
+18,Auburn,1
+18,Duke,2
+18,Houston,3
+18,Tennessee,4
+18,Florida,5
+18,St. John's,6
+18,Alabama,7
+18,Michigan State,8
+18,Texas Tech,9
+18,Iowa State,10
+18,Clemson,11
+18,Wisconsin,12
+18,Maryland,13
+18,Louisville,14
+18,Missouri,15
+18,Memphis,16
+18,Michigan,17
+18,Purdue,18
+18,Kentucky,19
+18,Marquette,20
+18,Saint Mary's,21
+18,Texas A&M,22
+18,BYU,23
+18,Arizona,24
+18,Mississippi State,25
+19,Duke,1
+19,Houston,2
+19,Auburn,3
+19,Florida,4
+19,Alabama,5
+19,St. John's,6
+19,Michigan State,7
+19,Tennessee,8
+19,Texas Tech,9
+19,Clemson,10
+19,Maryland,11
+19,Iowa State,12
+19,Louisville,13
+19,Texas A&M,14
+19,Kentucky,15
+19,Memphis,16
+19,BYU,17
+19,Wisconsin,18
+19,Saint Mary's,19
+19,Purdue,20
+19,Missouri,21
+19,Michigan,22
+19,Oregon,23
+19,Illinois,24
+19,Marquette,25
+20,Duke,1
+20,Houston,2
+20,Florida,3
+20,Auburn,4
+20,St. John's,5
+20,Tennessee,6
+20,Alabama,7
+20,Michigan State,8
+20,Texas Tech,9
+20,Louisville,10
+20,Maryland,11
+20,Clemson,12
+20,Wisconsin,13
+20,Michigan,14
+20,Iowa State,15
+20,Memphis,16
+20,BYU,17
+20,Kentucky,18
+20,Texas A&M,19
+20,Saint Mary's,20
+20,Arizona,21
+20,Purdue,22
+20,Missouri,23
+20,Gonzaga,24
+20,Oregon,25

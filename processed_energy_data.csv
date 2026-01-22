@@ -1,0 +1,851 @@
+state,energy_source,generation
+Connecticut,all_fuels_(utility-scale),45159
+Connecticut,coal,0
+Connecticut,petroleum_liquids,144
+Connecticut,petroleum_coke,0
+Connecticut,natural_gas,26139
+Connecticut,other_gases,NA
+Connecticut,nuclear,16870
+Connecticut,conventional_hydroelectric,468
+Connecticut,other_renewables,NA
+Connecticut,wind,10
+Connecticut,geothermal,NA
+Connecticut,biomass,597
+Connecticut,wood_and_wood-derived_fuels,243
+Connecticut,other_biomass,354
+Connecticut,hydro-electric_pumped_storage,5
+Connecticut,other,424
+Connecticut,all_solar,1962
+Maine,all_fuels_(utility-scale),13758
+Maine,coal,29
+Maine,petroleum_liquids,61
+Maine,petroleum_coke,NA
+Maine,natural_gas,4182
+Maine,other_gases,NA
+Maine,nuclear,NA
+Maine,conventional_hydroelectric,3781
+Maine,other_renewables,NA
+Maine,wind,2832
+Maine,geothermal,NA
+Maine,biomass,1510
+Maine,wood_and_wood-derived_fuels,1437
+Maine,other_biomass,73
+Maine,hydro-electric_pumped_storage,NA
+Maine,other,286
+Maine,all_solar,2092
+Massachusetts,all_fuels_(utility-scale),20591
+Massachusetts,coal,0
+Massachusetts,petroleum_liquids,190
+Massachusetts,petroleum_coke,NA
+Massachusetts,natural_gas,15372
+Massachusetts,other_gases,NA
+Massachusetts,nuclear,NA
+Massachusetts,conventional_hydroelectric,1257
+Massachusetts,other_renewables,NA
+Massachusetts,wind,178
+Massachusetts,geothermal,NA
+Massachusetts,biomass,905
+Massachusetts,wood_and_wood-derived_fuels,35
+Massachusetts,other_biomass,869
+Massachusetts,hydro-electric_pumped_storage,-483
+Massachusetts,other,927
+Massachusetts,all_solar,6310
+New Hampshire,all_fuels_(utility-scale),17298
+New Hampshire,coal,224
+New Hampshire,petroleum_liquids,57
+New Hampshire,petroleum_coke,NA
+New Hampshire,natural_gas,4421
+New Hampshire,other_gases,NA
+New Hampshire,nuclear,9677
+New Hampshire,conventional_hydroelectric,1590
+New Hampshire,other_renewables,NA
+New Hampshire,wind,445
+New Hampshire,geothermal,NA
+New Hampshire,biomass,829
+New Hampshire,wood_and_wood-derived_fuels,687
+New Hampshire,other_biomass,142
+New Hampshire,hydro-electric_pumped_storage,NA
+New Hampshire,other,51
+New Hampshire,all_solar,365
+Rhode Island,all_fuels_(utility-scale),9461
+Rhode Island,coal,0
+Rhode Island,petroleum_liquids,NA
+Rhode Island,petroleum_coke,NA
+Rhode Island,natural_gas,8431
+Rhode Island,other_gases,NA
+Rhode Island,nuclear,NA
+Rhode Island,conventional_hydroelectric,NA
+Rhode Island,other_renewables,NA
+Rhode Island,wind,179
+Rhode Island,geothermal,NA
+Rhode Island,biomass,208
+Rhode Island,wood_and_wood-derived_fuels,NA
+Rhode Island,other_biomass,208
+Rhode Island,hydro-electric_pumped_storage,NA
+Rhode Island,other,0
+Rhode Island,all_solar,1333
+Vermont,all_fuels_(utility-scale),2536
+Vermont,coal,NA
+Vermont,petroleum_liquids,NA
+Vermont,petroleum_coke,NA
+Vermont,natural_gas,1
+Vermont,other_gases,NA
+Vermont,nuclear,NA
+Vermont,conventional_hydroelectric,1529
+Vermont,other_renewables,NA
+Vermont,wind,355
+Vermont,geothermal,NA
+Vermont,biomass,423
+Vermont,wood_and_wood-derived_fuels,372
+Vermont,other_biomass,51
+Vermont,hydro-electric_pumped_storage,NA
+Vermont,other,2
+Vermont,all_solar,468
+New Jersey,all_fuels_(utility-scale),61232
+New Jersey,coal,0
+New Jersey,petroleum_liquids,33
+New Jersey,petroleum_coke,0
+New Jersey,natural_gas,30514
+New Jersey,other_gases,164
+New Jersey,nuclear,27677
+New Jersey,conventional_hydroelectric,4
+New Jersey,other_renewables,NA
+New Jersey,wind,19
+New Jersey,geothermal,NA
+New Jersey,biomass,654
+New Jersey,wood_and_wood-derived_fuels,NA
+New Jersey,other_biomass,654
+New Jersey,hydro-electric_pumped_storage,-232
+New Jersey,other,613
+New Jersey,all_solar,5189
+New York,all_fuels_(utility-scale),131671
+New York,coal,0
+New York,petroleum_liquids,433
+New York,petroleum_coke,NA
+New York,natural_gas,64153
+New York,other_gases,0
+New York,nuclear,27073
+New York,conventional_hydroelectric,28465
+New York,other_renewables,NA
+New York,wind,5991
+New York,geothermal,NA
+New York,biomass,1573
+New York,wood_and_wood-derived_fuels,163
+New York,other_biomass,1410
+New York,hydro-electric_pumped_storage,-410
+New York,other,1013
+New York,all_solar,7905
+Pennsylvania,all_fuels_(utility-scale),243613
+Pennsylvania,coal,13201
+Pennsylvania,petroleum_liquids,88
+Pennsylvania,petroleum_coke,0
+Pennsylvania,natural_gas,145473
+Pennsylvania,other_gases,371
+Pennsylvania,nuclear,75404
+Pennsylvania,conventional_hydroelectric,2835
+Pennsylvania,other_renewables,NA
+Pennsylvania,wind,3576
+Pennsylvania,geothermal,NA
+Pennsylvania,biomass,1506
+Pennsylvania,wood_and_wood-derived_fuels,255
+Pennsylvania,other_biomass,1251
+Pennsylvania,hydro-electric_pumped_storage,-909
+Pennsylvania,other,872
+Pennsylvania,all_solar,2189
+Illinois,all_fuels_(utility-scale),186092
+Illinois,coal,26972
+Illinois,petroleum_liquids,23
+Illinois,petroleum_coke,0
+Illinois,natural_gas,32012
+Illinois,other_gases,176
+Illinois,nuclear,99212
+Illinois,conventional_hydroelectric,74
+Illinois,other_renewables,NA
+Illinois,wind,24432
+Illinois,geothermal,NA
+Illinois,biomass,254
+Illinois,wood_and_wood-derived_fuels,0
+Illinois,other_biomass,254
+Illinois,hydro-electric_pumped_storage,NA
+Illinois,other,234
+Illinois,all_solar,4628
+Indiana,all_fuels_(utility-scale),94799
+Indiana,coal,40610
+Indiana,petroleum_liquids,97
+Indiana,petroleum_coke,0
+Indiana,natural_gas,38405
+Indiana,other_gases,1675
+Indiana,nuclear,NA
+Indiana,conventional_hydroelectric,460
+Indiana,other_renewables,NA
+Indiana,wind,9793
+Indiana,geothermal,NA
+Indiana,biomass,226
+Indiana,wood_and_wood-derived_fuels,0
+Indiana,other_biomass,226
+Indiana,hydro-electric_pumped_storage,NA
+Indiana,other,432
+Indiana,all_solar,3489
+Michigan,all_fuels_(utility-scale),124719
+Michigan,coal,25741
+Michigan,petroleum_liquids,93
+Michigan,petroleum_coke,1406
+Michigan,natural_gas,56039
+Michigan,other_gases,946
+Michigan,nuclear,26281
+Michigan,conventional_hydroelectric,1360
+Michigan,other_renewables,NA
+Michigan,wind,9764
+Michigan,geothermal,NA
+Michigan,biomass,2030
+Michigan,wood_and_wood-derived_fuels,1338
+Michigan,other_biomass,692
+Michigan,hydro-electric_pumped_storage,-976
+Michigan,other,121
+Michigan,all_solar,2262
+Ohio,all_fuels_(utility-scale),142876
+Ohio,coal,30180
+Ohio,petroleum_liquids,141
+Ohio,petroleum_coke,835
+Ohio,natural_gas,85417
+Ohio,other_gases,682
+Ohio,nuclear,17947
+Ohio,conventional_hydroelectric,504
+Ohio,other_renewables,NA
+Ohio,wind,2865
+Ohio,geothermal,NA
+Ohio,biomass,279
+Ohio,wood_and_wood-derived_fuels,134
+Ohio,other_biomass,145
+Ohio,hydro-electric_pumped_storage,NA
+Ohio,other,5
+Ohio,all_solar,4530
+Wisconsin,all_fuels_(utility-scale),65567
+Wisconsin,coal,20816
+Wisconsin,petroleum_liquids,NA
+Wisconsin,petroleum_coke,3
+Wisconsin,natural_gas,26658
+Wisconsin,other_gases,NA
+Wisconsin,nuclear,10147
+Wisconsin,conventional_hydroelectric,1905
+Wisconsin,other_renewables,NA
+Wisconsin,wind,1994
+Wisconsin,geothermal,NA
+Wisconsin,biomass,943
+Wisconsin,wood_and_wood-derived_fuels,613
+Wisconsin,other_biomass,331
+Wisconsin,hydro-electric_pumped_storage,NA
+Wisconsin,other,107
+Wisconsin,all_solar,3302
+Iowa,all_fuels_(utility-scale),69874
+Iowa,coal,14481
+Iowa,petroleum_liquids,57
+Iowa,petroleum_coke,5
+Iowa,natural_gas,9185
+Iowa,other_gases,NA
+Iowa,nuclear,NA
+Iowa,conventional_hydroelectric,958
+Iowa,other_renewables,NA
+Iowa,wind,44306
+Iowa,geothermal,NA
+Iowa,biomass,211
+Iowa,wood_and_wood-derived_fuels,1
+Iowa,other_biomass,210
+Iowa,hydro-electric_pumped_storage,NA
+Iowa,other,0
+Iowa,all_solar,1150
+Kansas,all_fuels_(utility-scale),58481
+Kansas,coal,13079
+Kansas,petroleum_liquids,109
+Kansas,petroleum_coke,NA
+Kansas,natural_gas,5596
+Kansas,other_gases,NA
+Kansas,nuclear,9204
+Kansas,conventional_hydroelectric,20
+Kansas,other_renewables,NA
+Kansas,wind,30320
+Kansas,geothermal,NA
+Kansas,biomass,64
+Kansas,wood_and_wood-derived_fuels,NA
+Kansas,other_biomass,64
+Kansas,hydro-electric_pumped_storage,NA
+Kansas,other,5
+Kansas,all_solar,250
+Minnesota,all_fuels_(utility-scale),58286
+Minnesota,coal,11422
+Minnesota,petroleum_liquids,NA
+Minnesota,petroleum_coke,NA
+Minnesota,natural_gas,15435
+Minnesota,other_gases,NA
+Minnesota,nuclear,11845
+Minnesota,conventional_hydroelectric,747
+Minnesota,other_renewables,NA
+Minnesota,wind,14934
+Minnesota,geothermal,NA
+Minnesota,biomass,1192
+Minnesota,wood_and_wood-derived_fuels,896
+Minnesota,other_biomass,296
+Minnesota,hydro-electric_pumped_storage,NA
+Minnesota,other,306
+Minnesota,all_solar,2758
+Missouri,all_fuels_(utility-scale),67921
+Missouri,coal,38831
+Missouri,petroleum_liquids,146
+Missouri,petroleum_coke,NA
+Missouri,natural_gas,10288
+Missouri,other_gases,NA
+Missouri,nuclear,10526
+Missouri,conventional_hydroelectric,872
+Missouri,other_renewables,NA
+Missouri,wind,6810
+Missouri,geothermal,NA
+Missouri,biomass,100
+Missouri,wood_and_wood-derived_fuels,48
+Missouri,other_biomass,52
+Missouri,hydro-electric_pumped_storage,147
+Missouri,other,0
+Missouri,all_solar,961
+Nebraska,all_fuels_(utility-scale),37723
+Nebraska,coal,16345
+Nebraska,petroleum_liquids,NA
+Nebraska,petroleum_coke,NA
+Nebraska,natural_gas,1603
+Nebraska,other_gases,NA
+Nebraska,nuclear,6096
+Nebraska,conventional_hydroelectric,1125
+Nebraska,other_renewables,NA
+Nebraska,wind,12245
+Nebraska,geothermal,NA
+Nebraska,biomass,81
+Nebraska,wood_and_wood-derived_fuels,0
+Nebraska,other_biomass,81
+Nebraska,hydro-electric_pumped_storage,NA
+Nebraska,other,0
+Nebraska,all_solar,243
+North Dakota,all_fuels_(utility-scale),43252
+North Dakota,coal,23171
+North Dakota,petroleum_liquids,44
+North Dakota,petroleum_coke,NA
+North Dakota,natural_gas,2869
+North Dakota,other_gases,28
+North Dakota,nuclear,NA
+North Dakota,conventional_hydroelectric,2074
+North Dakota,other_renewables,NA
+North Dakota,wind,15030
+North Dakota,geothermal,NA
+North Dakota,biomass,0
+North Dakota,wood_and_wood-derived_fuels,NA
+North Dakota,other_biomass,0
+North Dakota,hydro-electric_pumped_storage,NA
+North Dakota,other,36
+North Dakota,all_solar,3
+South Dakota,all_fuels_(utility-scale),20503
+South Dakota,coal,1563
+South Dakota,petroleum_liquids,NA
+South Dakota,petroleum_coke,NA
+South Dakota,natural_gas,2223
+South Dakota,other_gases,0
+South Dakota,nuclear,NA
+South Dakota,conventional_hydroelectric,4214
+South Dakota,other_renewables,NA
+South Dakota,wind,12129
+South Dakota,geothermal,NA
+South Dakota,biomass,NA
+South Dakota,wood_and_wood-derived_fuels,16
+South Dakota,other_biomass,NA
+South Dakota,hydro-electric_pumped_storage,NA
+South Dakota,other,0
+South Dakota,all_solar,346
+Delaware,all_fuels_(utility-scale),4723
+Delaware,coal,144
+Delaware,petroleum_liquids,NA
+Delaware,petroleum_coke,0
+Delaware,natural_gas,4104
+Delaware,other_gases,221
+Delaware,nuclear,NA
+Delaware,conventional_hydroelectric,NA
+Delaware,other_renewables,NA
+Delaware,wind,3
+Delaware,geothermal,NA
+Delaware,biomass,62
+Delaware,wood_and_wood-derived_fuels,NA
+Delaware,other_biomass,62
+Delaware,hydro-electric_pumped_storage,NA
+Delaware,other,NA
+Delaware,all_solar,372
+Florida,all_fuels_(utility-scale),265406
+Florida,coal,7846
+Florida,petroleum_liquids,186
+Florida,petroleum_coke,646
+Florida,natural_gas,203687
+Florida,other_gases,0
+Florida,nuclear,29054
+Florida,conventional_hydroelectric,223
+Florida,other_renewables,NA
+Florida,wind,NA
+Florida,geothermal,NA
+Florida,biomass,2975
+Florida,wood_and_wood-derived_fuels,1284
+Florida,other_biomass,1691
+Florida,hydro-electric_pumped_storage,NA
+Florida,other,2109
+Florida,all_solar,23302
+Georgia,all_fuels_(utility-scale),140481
+Georgia,coal,17865
+Georgia,petroleum_liquids,228
+Georgia,petroleum_coke,16
+Georgia,natural_gas,58055
+Georgia,other_gases,NA
+Georgia,nuclear,47976
+Georgia,conventional_hydroelectric,3031
+Georgia,other_renewables,NA
+Georgia,wind,NA
+Georgia,geothermal,NA
+Georgia,biomass,5214
+Georgia,wood_and_wood-derived_fuels,4915
+Georgia,other_biomass,299
+Georgia,hydro-electric_pumped_storage,-760
+Georgia,other,77
+Georgia,all_solar,9348
+Maryland,all_fuels_(utility-scale),35815
+Maryland,coal,2466
+Maryland,petroleum_liquids,204
+Maryland,petroleum_coke,NA
+Maryland,natural_gas,14179
+Maryland,other_gases,NA
+Maryland,nuclear,14767
+Maryland,conventional_hydroelectric,1853
+Maryland,other_renewables,NA
+Maryland,wind,558
+Maryland,geothermal,NA
+Maryland,biomass,337
+Maryland,wood_and_wood-derived_fuels,0
+Maryland,other_biomass,337
+Maryland,hydro-electric_pumped_storage,NA
+Maryland,other,339
+Maryland,all_solar,2603
+North Carolina,all_fuels_(utility-scale),135600
+North Carolina,coal,17078
+North Carolina,petroleum_liquids,152
+North Carolina,petroleum_coke,NA
+North Carolina,natural_gas,55965
+North Carolina,other_gases,NA
+North Carolina,nuclear,43349
+North Carolina,conventional_hydroelectric,4529
+North Carolina,other_renewables,NA
+North Carolina,wind,530
+North Carolina,geothermal,NA
+North Carolina,biomass,1503
+North Carolina,wood_and_wood-derived_fuels,1086
+North Carolina,other_biomass,418
+North Carolina,hydro-electric_pumped_storage,0
+North Carolina,other,225
+North Carolina,all_solar,13174
+South Carolina,all_fuels_(utility-scale),100380
+South Carolina,coal,16842
+South Carolina,petroleum_liquids,101
+South Carolina,petroleum_coke,0
+South Carolina,natural_gas,22663
+South Carolina,other_gases,NA
+South Carolina,nuclear,53770
+South Carolina,conventional_hydroelectric,2372
+South Carolina,other_renewables,NA
+South Carolina,wind,NA
+South Carolina,geothermal,NA
+South Carolina,biomass,1883
+South Carolina,wood_and_wood-derived_fuels,1804
+South Carolina,other_biomass,79
+South Carolina,hydro-electric_pumped_storage,-251
+South Carolina,other,47
+South Carolina,all_solar,3591
+Virginia,all_fuels_(utility-scale),101922
+Virginia,coal,1972
+Virginia,petroleum_liquids,170
+Virginia,petroleum_coke,NA
+Virginia,natural_gas,60352
+Virginia,other_gases,NA
+Virginia,nuclear,28945
+Virginia,conventional_hydroelectric,1156
+Virginia,other_renewables,NA
+Virginia,wind,50
+Virginia,geothermal,NA
+Virginia,biomass,3349
+Virginia,wood_and_wood-derived_fuels,2549
+Virginia,other_biomass,800
+Virginia,hydro-electric_pumped_storage,-1533
+Virginia,other,428
+Virginia,all_solar,8076
+West Virginia,all_fuels_(utility-scale),50845
+West Virginia,coal,43075
+West Virginia,petroleum_liquids,125
+West Virginia,petroleum_coke,0
+West Virginia,natural_gas,3864
+West Virginia,other_gases,40
+West Virginia,nuclear,NA
+West Virginia,conventional_hydroelectric,1530
+West Virginia,other_renewables,NA
+West Virginia,wind,2003
+West Virginia,geothermal,NA
+West Virginia,biomass,8
+West Virginia,wood_and_wood-derived_fuels,NA
+West Virginia,other_biomass,8
+West Virginia,hydro-electric_pumped_storage,NA
+West Virginia,other,-7
+West Virginia,all_solar,268
+Alabama,all_fuels_(utility-scale),143219
+Alabama,coal,20936
+Alabama,petroleum_liquids,14
+Alabama,petroleum_coke,NA
+Alabama,natural_gas,64557
+Alabama,other_gases,NA
+Alabama,nuclear,44487
+Alabama,conventional_hydroelectric,8722
+Alabama,other_renewables,NA
+Alabama,wind,NA
+Alabama,geothermal,NA
+Alabama,biomass,3246
+Alabama,wood_and_wood-derived_fuels,3205
+Alabama,other_biomass,41
+Alabama,hydro-electric_pumped_storage,NA
+Alabama,other,0
+Alabama,all_solar,1284
+Kentucky,all_fuels_(utility-scale),67029
+Kentucky,coal,44829
+Kentucky,petroleum_liquids,58
+Kentucky,petroleum_coke,0
+Kentucky,natural_gas,17520
+Kentucky,other_gases,NA
+Kentucky,nuclear,NA
+Kentucky,conventional_hydroelectric,3949
+Kentucky,other_renewables,NA
+Kentucky,wind,NA
+Kentucky,geothermal,NA
+Kentucky,biomass,416
+Kentucky,wood_and_wood-derived_fuels,329
+Kentucky,other_biomass,87
+Kentucky,hydro-electric_pumped_storage,NA
+Kentucky,other,12
+Kentucky,all_solar,406
+Mississippi,all_fuels_(utility-scale),74371
+Mississippi,coal,3334
+Mississippi,petroleum_liquids,9
+Mississippi,petroleum_coke,NA
+Mississippi,natural_gas,57193
+Mississippi,other_gases,NA
+Mississippi,nuclear,10690
+Mississippi,conventional_hydroelectric,NA
+Mississippi,other_renewables,NA
+Mississippi,wind,347
+Mississippi,geothermal,NA
+Mississippi,biomass,1249
+Mississippi,wood_and_wood-derived_fuels,1241
+Mississippi,other_biomass,8
+Mississippi,hydro-electric_pumped_storage,NA
+Mississippi,other,-4
+Mississippi,all_solar,1583
+Tennessee,all_fuels_(utility-scale),75426
+Tennessee,coal,17435
+Tennessee,petroleum_liquids,121
+Tennessee,petroleum_coke,NA
+Tennessee,natural_gas,16639
+Tennessee,other_gases,12
+Tennessee,nuclear,32186
+Tennessee,conventional_hydroelectric,8040
+Tennessee,other_renewables,NA
+Tennessee,wind,22
+Tennessee,geothermal,NA
+Tennessee,biomass,440
+Tennessee,wood_and_wood-derived_fuels,380
+Tennessee,other_biomass,61
+Tennessee,hydro-electric_pumped_storage,-571
+Tennessee,other,0
+Tennessee,all_solar,1178
+Arkansas,all_fuels_(utility-scale),59641
+Arkansas,coal,15660
+Arkansas,petroleum_liquids,35
+Arkansas,petroleum_coke,0
+Arkansas,natural_gas,22832
+Arkansas,other_gases,NA
+Arkansas,nuclear,14763
+Arkansas,conventional_hydroelectric,3252
+Arkansas,other_renewables,NA
+Arkansas,wind,NA
+Arkansas,geothermal,NA
+Arkansas,biomass,814
+Arkansas,wood_and_wood-derived_fuels,789
+Arkansas,other_biomass,26
+Arkansas,hydro-electric_pumped_storage,77
+Arkansas,other,7
+Arkansas,all_solar,2717
+Louisiana,all_fuels_(utility-scale),99006
+Louisiana,coal,3764
+Louisiana,petroleum_liquids,NA
+Louisiana,petroleum_coke,37
+Louisiana,natural_gas,75139
+Louisiana,other_gases,1316
+Louisiana,nuclear,14686
+Louisiana,conventional_hydroelectric,716
+Louisiana,other_renewables,NA
+Louisiana,wind,NA
+Louisiana,geothermal,NA
+Louisiana,biomass,1940
+Louisiana,wood_and_wood-derived_fuels,1856
+Louisiana,other_biomass,84
+Louisiana,hydro-electric_pumped_storage,NA
+Louisiana,other,185
+Louisiana,all_solar,1546
+Oklahoma,all_fuels_(utility-scale),94998
+Oklahoma,coal,6135
+Oklahoma,petroleum_liquids,28
+Oklahoma,petroleum_coke,0
+Oklahoma,natural_gas,48071
+Oklahoma,other_gases,NA
+Oklahoma,nuclear,NA
+Oklahoma,conventional_hydroelectric,1527
+Oklahoma,other_renewables,NA
+Oklahoma,wind,38635
+Oklahoma,geothermal,NA
+Oklahoma,biomass,331
+Oklahoma,wood_and_wood-derived_fuels,246
+Oklahoma,other_biomass,84
+Oklahoma,hydro-electric_pumped_storage,-48
+Oklahoma,other,22
+Oklahoma,all_solar,526
+Texas,all_fuels_(utility-scale),563753
+Texas,coal,65545
+Texas,petroleum_liquids,252
+Texas,petroleum_coke,57
+Texas,natural_gas,290347
+Texas,other_gases,2415
+Texas,nuclear,38613
+Texas,conventional_hydroelectric,918
+Texas,other_renewables,NA
+Texas,wind,124936
+Texas,geothermal,NA
+Texas,biomass,1199
+Texas,wood_and_wood-derived_fuels,1047
+Texas,other_biomass,152
+Texas,hydro-electric_pumped_storage,NA
+Texas,other,-76
+Texas,all_solar,44506
+Arizona,all_fuels_(utility-scale),116227
+Arizona,coal,9815
+Arizona,petroleum_liquids,30
+Arizona,petroleum_coke,NA
+Arizona,natural_gas,55155
+Arizona,other_gases,NA
+Arizona,nuclear,32388
+Arizona,conventional_hydroelectric,5226
+Arizona,other_renewables,NA
+Arizona,wind,2540
+Arizona,geothermal,NA
+Arizona,biomass,217
+Arizona,wood_and_wood-derived_fuels,199
+Arizona,other_biomass,18
+Arizona,hydro-electric_pumped_storage,69
+Arizona,other,0
+Arizona,all_solar,16237
+Colorado,all_fuels_(utility-scale),58664
+Colorado,coal,16478
+Colorado,petroleum_liquids,NA
+Colorado,petroleum_coke,NA
+Colorado,natural_gas,17813
+Colorado,other_gases,NA
+Colorado,nuclear,NA
+Colorado,conventional_hydroelectric,1613
+Colorado,other_renewables,NA
+Colorado,wind,17603
+Colorado,geothermal,NA
+Colorado,biomass,81
+Colorado,wood_and_wood-derived_fuels,13
+Colorado,other_biomass,68
+Colorado,hydro-electric_pumped_storage,73
+Colorado,other,7
+Colorado,all_solar,6975
+Idaho,all_fuels_(utility-scale),18403
+Idaho,coal,0
+Idaho,petroleum_liquids,0
+Idaho,petroleum_coke,NA
+Idaho,natural_gas,5796
+Idaho,other_gases,NA
+Idaho,nuclear,NA
+Idaho,conventional_hydroelectric,8219
+Idaho,other_renewables,NA
+Idaho,wind,2835
+Idaho,geothermal,71
+Idaho,biomass,401
+Idaho,wood_and_wood-derived_fuels,307
+Idaho,other_biomass,94
+Idaho,hydro-electric_pumped_storage,NA
+Idaho,other,69
+Idaho,all_solar,1289
+Montana,all_fuels_(utility-scale),26365
+Montana,coal,9754
+Montana,petroleum_liquids,19
+Montana,petroleum_coke,375
+Montana,natural_gas,1096
+Montana,other_gases,5
+Montana,nuclear,NA
+Montana,conventional_hydroelectric,8616
+Montana,other_renewables,NA
+Montana,wind,5853
+Montana,geothermal,NA
+Montana,biomass,24
+Montana,wood_and_wood-derived_fuels,17
+Montana,other_biomass,7
+Montana,hydro-electric_pumped_storage,NA
+Montana,other,256
+Montana,all_solar,474
+Nevada,all_fuels_(utility-scale),45530
+Nevada,coal,2323
+Nevada,petroleum_liquids,6
+Nevada,petroleum_coke,NA
+Nevada,natural_gas,25007
+Nevada,other_gases,0
+Nevada,nuclear,NA
+Nevada,conventional_hydroelectric,1607
+Nevada,other_renewables,NA
+Nevada,wind,319
+Nevada,geothermal,3848
+Nevada,biomass,56
+Nevada,wood_and_wood-derived_fuels,NA
+Nevada,other_biomass,56
+Nevada,hydro-electric_pumped_storage,NA
+Nevada,other,-116
+Nevada,all_solar,14524
+New Mexico,all_fuels_(utility-scale),40148
+New Mexico,coal,8432
+New Mexico,petroleum_liquids,NA
+New Mexico,petroleum_coke,NA
+New Mexico,natural_gas,11891
+New Mexico,other_gases,NA
+New Mexico,nuclear,NA
+New Mexico,conventional_hydroelectric,189
+New Mexico,other_renewables,NA
+New Mexico,wind,15285
+New Mexico,geothermal,26
+New Mexico,biomass,13
+New Mexico,wood_and_wood-derived_fuels,NA
+New Mexico,other_biomass,13
+New Mexico,hydro-electric_pumped_storage,NA
+New Mexico,other,-9
+New Mexico,all_solar,5120
+Utah,all_fuels_(utility-scale),34685
+Utah,coal,15967
+Utah,petroleum_liquids,34
+Utah,petroleum_coke,NA
+Utah,natural_gas,11574
+Utah,other_gases,1
+Utah,nuclear,NA
+Utah,conventional_hydroelectric,776
+Utah,other_renewables,NA
+Utah,wind,751
+Utah,geothermal,407
+Utah,biomass,88
+Utah,wood_and_wood-derived_fuels,NA
+Utah,other_biomass,88
+Utah,hydro-electric_pumped_storage,NA
+Utah,other,164
+Utah,all_solar,5918
+Wyoming,all_fuels_(utility-scale),41177
+Wyoming,coal,24544
+Wyoming,petroleum_liquids,46
+Wyoming,petroleum_coke,NA
+Wyoming,natural_gas,5475
+Wyoming,other_gases,324
+Wyoming,nuclear,NA
+Wyoming,conventional_hydroelectric,903
+Wyoming,other_renewables,NA
+Wyoming,wind,9372
+Wyoming,geothermal,NA
+Wyoming,biomass,NA
+Wyoming,wood_and_wood-derived_fuels,NA
+Wyoming,other_biomass,NA
+Wyoming,hydro-electric_pumped_storage,NA
+Wyoming,other,90
+Wyoming,all_solar,456
+California,all_fuels_(utility-scale),214131
+California,coal,246
+California,petroleum_liquids,57
+California,petroleum_coke,0
+California,natural_gas,86244
+California,other_gases,1208
+California,nuclear,18379
+California,conventional_hydroelectric,30549
+California,other_renewables,NA
+California,wind,14818
+California,geothermal,10913
+California,biomass,4884
+California,wood_and_wood-derived_fuels,2692
+California,other_biomass,2191
+California,hydro-electric_pumped_storage,-100
+California,other,-886
+California,all_solar,79544
+Oregon,all_fuels_(utility-scale),63229
+Oregon,coal,NA
+Oregon,petroleum_liquids,NA
+Oregon,petroleum_coke,NA
+Oregon,natural_gas,24317
+Oregon,other_gases,NA
+Oregon,nuclear,NA
+Oregon,conventional_hydroelectric,26144
+Oregon,other_renewables,NA
+Oregon,wind,9580
+Oregon,geothermal,158
+Oregon,biomass,940
+Oregon,wood_and_wood-derived_fuels,672
+Oregon,other_biomass,267
+Oregon,hydro-electric_pumped_storage,NA
+Oregon,other,13
+Oregon,all_solar,2698
+Washington,all_fuels_(utility-scale),101535
+Washington,coal,2847
+Washington,petroleum_liquids,NA
+Washington,petroleum_coke,0
+Washington,natural_gas,17959
+Washington,other_gases,223
+Washington,nuclear,9967
+Washington,conventional_hydroelectric,60456
+Washington,other_renewables,NA
+Washington,wind,8421
+Washington,geothermal,NA
+Washington,biomass,1121
+Washington,wood_and_wood-derived_fuels,1006
+Washington,other_biomass,115
+Washington,hydro-electric_pumped_storage,2
+Washington,other,75
+Washington,all_solar,1070
+Alaska,all_fuels_(utility-scale),6532
+Alaska,coal,761
+Alaska,petroleum_liquids,978
+Alaska,petroleum_coke,NA
+Alaska,natural_gas,2853
+Alaska,other_gases,NA
+Alaska,nuclear,NA
+Alaska,conventional_hydroelectric,1760
+Alaska,other_renewables,NA
+Alaska,wind,124
+Alaska,geothermal,NA
+Alaska,biomass,43
+Alaska,wood_and_wood-derived_fuels,0
+Alaska,other_biomass,43
+Alaska,hydro-electric_pumped_storage,NA
+Alaska,other,-3
+Alaska,all_solar,36
+Hawaii,all_fuels_(utility-scale),9173
+Hawaii,coal,NA
+Hawaii,petroleum_liquids,7011
+Hawaii,petroleum_coke,NA
+Hawaii,natural_gas,NA
+Hawaii,other_gases,0
+Hawaii,nuclear,NA
+Hawaii,conventional_hydroelectric,101
+Hawaii,other_renewables,NA
+Hawaii,wind,662
+Hawaii,geothermal,248
+Hawaii,biomass,NA
+Hawaii,wood_and_wood-derived_fuels,NA
+Hawaii,other_biomass,251
+Hawaii,hydro-electric_pumped_storage,NA
+Hawaii,other,164
+Hawaii,all_solar,2311

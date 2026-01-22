@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Length of Papal Conclaves in the Modern Era</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #1e3a8a;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 32px;
+        }
+        h2 {
+            color: #1e40af;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .chart-container {
+            margin: 20px 0;
+            background-color: white;
+            border-radius: 4px;
+            padding: 20px;
+        }
+        .bar-chart {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .bar-container {
+            display: flex;
+            align-items: center;
+            height: 45px;
+        }
+        .bar-label {
+            width: 180px;
+            text-align: right;
+            padding-right: 15px;
+            font-size: 14px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .bar-wrapper {
+            flex: 1;
+            height: 100%;
+            position: relative;
+        }
+        .bar {
+            height: 30px;
+            background-color: #8884d8;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            padding-left: 10px;
+        }
+        .longest-bar {
+            background-color: #82ca9d;
+        }
+        .bar-value {
+            color: white;
+            font-weight: bold;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .chart-axis {
+            display: flex;
+            margin-left: 180px;
+            margin-top: 8px;
+            border-top: 1px solid #ddd;
+            padding-top: 4px;
+        }
+        .chart-axis-marker {
+            position: relative;
+            flex: 1;
+        }
+        .chart-axis-marker::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: -8px;
+            height: 8px;
+            border-left: 1px solid #ddd;
+        }
+        .history-section {
+            background-color: #ebf5ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 40px;
+        }
+        .history-section ul {
+            margin-left: 20px;
+        }
+        .history-section li {
+            margin-bottom: 10px;
+        }
+        .footer {
+            margin-top: 30px;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Length of Papal Conclaves in the Modern Era</h1>
+        
+        <div class="section">
+            <h2>Duration of Papal Conclaves Since 1903</h2>
+            <p>Modern conclaves have been relatively short compared to historical ones, typically lasting only a few days.</p>
+            
+            <div class="chart-container">
+                <div class="bar-chart">
+                    <div class="bar-container">
+                        <div class="bar-label">1903 (Pius X)</div>
+                        <div class="bar-wrapper">
+                            <div class="bar" style="width: 50%;">
+                                <span class="bar-value">5 days</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bar-container">
+                        <div class="bar-label">1914 (Benedict XV)</div>
+                        <div class="bar-wrapper">
+                            <div class="bar" style="width: 30%;">
+                                <span class="bar-value">3 days</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bar-container">
+                        <div class="bar-label">1922 (Pius XI)</div>
+                        <div class="bar-wrapper">
+                            <div class="bar" style="width: 50%;">
+                                <span class="bar-value">5 days</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bar-container">
+                        <div class="bar-label">1939 (Pius XII)</div>
+                        <div class="bar-wrapper">
+                            <div class="bar" style="width: 20%;">
+                                <span class="bar-value">2 days</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bar-container">
+                        <div class="bar-label">1958 (John XXIII)</div>
+                        <div class="bar-wrapper">
+                            <div class="bar" style="width: 40%;">
+                                <span class="bar-value">4 days</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bar-container">
+                        <div class="bar-label">1963 (Paul VI)</div>
+                        <div class="bar-wrapper">
+                            <div class="bar" style="width: 30%;">
+                                <span class="bar-value">3 days</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bar-container">
+                        <div class="bar-label">1978 (John Paul I)</div>
+                        <div class="bar-wrapper">
+                            <div class="bar" style="width: 20%;">
+                                <span class="bar-value">2 days</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bar-container">
+                        <div class="bar-label">1978 (John Paul II)</div>
+                        <div class="bar-wrapper">
+                            <div class="bar" style="width: 30%;">
+                                <span class="bar-value">3 days</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bar-container">
+                        <div class="bar-label">2005 (Benedict XVI)</div>
+                        <div class="bar-wrapper">
+                            <div class="bar" style="width: 20%;">
+                                <span class="bar-value">2 days</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bar-container">
+                        <div class="bar-label">2013 (Francis)</div>
+                        <div class="bar-wrapper">
+                            <div class="bar" style="width: 20%;">
+                                <span class="bar-value">2 days</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>The 5 Longest Papal Conclaves Since 1061</h2>
+            <p>Historical conclaves could last months or even years. The longest lasted nearly three years!</p>
+            
+            <div class="chart-container">
+                <div class="bar-chart">
+                    <div class="bar-container">
+                        <div class="bar-label">1268-1271 (Gregory X)</div>
+                        <div class="bar-wrapper">
+                            <div class="bar longest-bar" style="width: 100%;">
+                                <span class="bar-value">1,006 days</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bar-container">
+                        <div class="bar-label">1740-1741 (Benedict XIV)</div>
+                        <div class="bar-wrapper">
+                            <div class="bar longest-bar" style="width: 18%;">
+                                <span class="bar-value">181 days</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bar-container">
+                        <div class="bar-label">1774-1775 (Pius VI)</div>
+                        <div class="bar-wrapper">
+                            <div class="bar longest-bar" style="width: 13.5%;">
+                                <span class="bar-value">133 days</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bar-container">
+                        <div class="bar-label">1769 (Clement XIV)</div>
+                        <div class="bar-wrapper">
+                            <div class="bar longest-bar" style="width: 9.5%;">
+                                <span class="bar-value">94 days</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bar-container">
+                        <div class="bar-label">1758 (Clement XIII)</div>
+                        <div class="bar-wrapper">
+                            <div class="bar longest-bar" style="width: 5.5%;">
+                                <span class="bar-value">53 days</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chart-note" style="font-size:12px; color:#666; text-align:right; margin-top:5px">
+                    Note: Bar lengths are not to exact scale due to the extreme difference between the longest conclave and others
+                </div>
+            </div>
+        </div>
+        
+        <div class="history-section">
+            <h2>How Popes Were Selected Prior to 1061</h2>
+            <p>Before the formal conclave process was established, papal selection varied throughout history:</p>
+            <ul>
+                <li>In the early Church (first centuries), the bishop of Rome was chosen by the consensus of local clergy and laity, similar to other bishops.</li>
+                <li>Some early popes reportedly appointed their own successors, though this practice didn't gain widespread support.</li>
+                <li>As papal power grew, political rulers and emperors often influenced or directly appointed popes.</li>
+                <li>By the early medieval period, powerful Roman families frequently controlled papal succession.</li>
+                <li>The absence of a standardized election process contributed to religious schisms and disputes over legitimate papal claims.</li>
+            </ul>
+            <p>The significant reform came in 1059 when Pope Nicholas II promulgated "In Nomine Domini," which established cardinal bishops as the sole electors of the pope. This marked the beginning of the more structured papal election process that would eventually evolve into the conclave system we recognize today.</p>
+        </div>
+        
+        <div class="footer">
+            <p>Sources: Vatican historical records, Encyclopedia Britannica, EWTN, Wikipedia</p>
+            <p>Created: April 30, 2025</p>
+        </div>
+    </div>
+</body>
+</html>

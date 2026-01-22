@@ -1,0 +1,202 @@
+---
+title: "Untitled"
+author: "Matthew Tillmawitz"
+date: "2025-04-07"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(tsibbledata)
+library(fpp3)
+library(openmeteo)
+library(patchwork)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+set.seed(38472)
+myseries <- aus_retail |>
+  filter(`Series ID` == sample(aus_retail$`Series ID`,1))
+
+series_comp <- myseries |>
+  model(x11 = X_13ARIMA_SEATS(Turnover ~ x11())) |>
+  components() 
+
+series_comp |>
+  autoplot() +
+  labs(title = "Monthly Turnover in Australian Retail",
+       subtitle = "X-13ARIMA-SEATS Decomposition",
+       y = "Millions AUD") +
+  theme_minimal()
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r , echo=FALSE}
+trend <- ggplot(series_comp, aes(x = Month, y = trend)) +
+  geom_line() +
+  labs(title = "Monthly Turnover Trend in the Retail Sector",
+       y = "Millions AUD") +
+  theme_minimal()
+
+raw <- autoplot(myseries) 
+
+trend + raw
+```
+
+```{r , echo=FALSE}
+ggplot() +
+  geom_line(series_comp, mapping = aes(x = Month, y = trend, colour = "Smoothed Trend")) +
+  geom_line(myseries, mapping = aes(x=Month, y=Turnover, color = "Raw"), alpha = 0.7) +
+  labs(title = "Monthly Turnover in the Australian Retail Sector",
+       y = "Millions AUD",
+       color = "") +
+  scale_color_manual(values = c("Smoothed Trend" = "orange", "Raw" = "darkgrey")) +
+  theme_minimal()
+```
+
+```{r , echo=FALSE}
+nyc_rain <- weather_history("New York City",
+  start = "2020-01-01",
+  end = "2024-12-31",
+  daily = "precipitation_sum"
+)
+```
+
+```{r , echo=FALSE}
+head(nyc_rain)
+```
+
+```{r , echo=FALSE}
+nyc_rain |>
+  ggplot(aes(x=date, y=daily_precipitation_sum)) +
+    geom_line()
+```
+
+```{r , echo=FALSE}
+nyc_rain |>
+  group_by(year_month = floor_date(date, unit = "month")) |>
+  summarise(monthly_rain = sum(daily_precipitation_sum)) |>
+  ggplot() +
+    geom_line(mapping = aes(x=year_month, y=monthly_rain, color = "Monthly")) +
+    geom_line(data = nyc_rain, mapping = aes(x=date, y=daily_precipitation_sum, color = "Daily")) +
+    labs(title = "Rainfall in NYC",
+         x = "Date",
+         y = "Rainfall (inches)",
+         color = "Aggregation Period") +
+    scale_color_manual(values = c("Monthly" = "orange", "Daily" = "black")) +
+    theme_minimal()
+```
+
+```{r , echo=FALSE}
+nyc_rain |>
+  group_by(year_month = floor_date(date, unit = "month")) |>
+  summarise(monthly_rain = sum(daily_precipitation_sum)) |>
+  ggplot() +
+    geom_line(mapping = aes(x=year_month, y=monthly_rain, color = "Monthly")) +
+    geom_line(data = nyc_rain, mapping = aes(x=date, y=daily_precipitation_sum, color = "Daily")) +
+    labs(title = "Rainfall in NYC",
+         x = "Date",
+         y = "Rainfall (inches)",
+         color = "Aggregation Period") +
+    scale_color_manual(values = c("Monthly" = "orange", "Daily" = "black")) +
+    theme_minimal()
+```
+
+```{r , echo=FALSE}
+nyc_rain |>
+  group_by(year_month = floor_date(date, unit = "week")) |>
+  summarise(monthly_rain = sum(daily_precipitation_sum)) |>
+  ggplot() +
+    geom_line(mapping = aes(x=year_month, y=monthly_rain, color = "Monthly")) +
+    geom_line(data = nyc_rain, mapping = aes(x=date, y=daily_precipitation_sum, color = "Daily")) +
+    labs(title = "Rainfall in NYC",
+         x = "Date",
+         y = "Rainfall (inches)",
+         color = "Aggregation Period") +
+    scale_color_manual(values = c("Monthly" = "orange", "Daily" = "black")) +
+    theme_minimal()
+```
+
+```{r , echo=FALSE}
+nyc_temp <- weather_history("New York City",
+  start = "2020-01-01",
+  end = "2024-12-31",
+  daily = "temperature_2m_mean"
+)
+```
+```{r , echo=FALSE}
+head(nyc_temp)
+```
+
+```{r , echo=FALSE}
+nyc_temp |>
+  group_by(year_month = floor_date(date, unit = "month")) |>
+  summarise(monthly_temp = sum(daily_temperature_2m_mean)) |>
+  ggplot() +
+    geom_line(mapping = aes(x=year_month, y=monthly_temp, color = "Monthly")) +
+    geom_line(data = nyc_temp, mapping = aes(x=date, y=daily_temperature_2m_mean, color = "Daily")) +
+    labs(title = "Rainfall in NYC",
+         x = "Date",
+         y = "Rainfall (inches)",
+         color = "Aggregation Period") +
+    scale_color_manual(values = c("Monthly" = "orange", "Daily" = "black")) +
+    theme_minimal()
+```
+
+```{r , echo=FALSE}
+  ggplot() +
+    geom_line(data = nyc_temp, mapping = aes(x=date, y=daily_temperature_2m_mean, color = "Daily")) +
+    labs(title = "Rainfall in NYC",
+         x = "Date",
+         y = "Rainfall (inches)",
+         color = "Aggregation Period")
+    theme_minimal()
+```
+
+```{r , echo=FALSE}
+nyc_temp |>
+  as_tsibble() |>
+  model(
+    STL(daily_temperature_2m_mean ~ trend(window = 365) +
+          season(window = "periodic"),
+        robust = TRUE)
+  ) |>
+  components() |>
+  autoplot()
+```
+
+```{r , echo=FALSE}
+head(us_gasoline)
+```
+
+```{r , echo=FALSE}
+gas_comp <- us_gasoline |>
+  model(
+    STL(Barrels ~ trend(window = 52) +
+          season(window = "periodic"),
+        robust = TRUE)
+  ) |>
+  components()
+```
+
+
+```{r , echo=FALSE}
+ggplot() +
+  geom_line(gas_comp, mapping = aes(x = Week, y = trend, colour = "Smoothed Trend")) +
+  geom_line(us_gasoline, mapping = aes(x=Week, y=Barrels, color = "Raw"), alpha = 0.5) +
+  labs(title = "Weekly US Gas Production",
+       y = "Barrels (Millions)",
+       color = "") +
+  scale_color_manual(values = c("Smoothed Trend" = "orange", "Raw" = "darkgrey")) +
+  theme_minimal()
+```
